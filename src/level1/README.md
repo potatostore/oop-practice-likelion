@@ -74,7 +74,10 @@ member.assignmentSubmitted = true;
 
 ## 생각해볼 질문
 1. **왜 `Member`는 일반 클래스가 아니라 추상 클래스인가?**
+    A : 다양한 역할을 가진 구성원들의 공통적인 기능, 변수를 Member로 묶기 위해
 2. **왜 `name`과 `assignmentSubmitted`를 `private`으로 두어야 하는가?**
+    A : 캡슐화를 위해 name, assignmentSubmitted와 같은 필드변수는 private로 선언하고, getter/setter과 같은 접근 기능을 통해 부여.
 3. **`submitAssignment()` 없이 필드를 직접 수정하게 하면 어떤 문제가 생기는가?**
+    A : ㅁㄹ?
 4. **지금 단계에서 아직 자식 클래스를 만들지 않았는데도 `getRole()`과 `doTask()`를 미리 선언한 이유는 무엇인가?**
-
+    A : 자식 클래스가 정의되어 있지 않아도, 자식 클래스에서 필수적으로 구현해야할 메서드를 추상 클래스에서 선언하고, 이를 자식 클래스에서 구현하는 것을 강제함

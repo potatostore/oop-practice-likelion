@@ -32,9 +32,16 @@ public abstract class Member {
     }
 
     public void submitAssignment() {
-        // TODO: 과제 제출 로직을 작성하세요.
+        if(!assignmentSubmitted){
+            assignmentSubmitted = true;
+            System.out.printf(this.name + "님이 과제를 제출하였습니다.");
+        }
+        else{
+            System.out.printf(this.name + "님은 이미 과제를 제출했습니다.");
+        }
     }
 
     // TODO: getRole(), doTask()를 추상 메서드로 선언하세요.
-    public abstract
+    public abstract void getRole();
+    public abstract void doTask();
 }
