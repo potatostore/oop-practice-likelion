@@ -1,5 +1,7 @@
 package level2;
 
+import level1.Member;
+
 public class Main {
     public static void main(String[] args) {
         BabyLion babyLion = new BabyLion("철수");
@@ -11,12 +13,13 @@ public class Main {
         System.out.printf(staff.getRole());
         System.out.printf(leader.getRole());
 
-        System.out.printf(babyLion.doTask());
-        System.out.printf(staff.doTask());
-        System.out.printf(leader.doTask());
+        babyLion.doTask();
+        staff.doTask();
+        leader.doTask();
 
-        System.out.printf(babyLion.askQuestion());
-        System.out.printf(staff.feedback());
-        System.out.printf(leader.communicate());
+        String question = babyLion.askQuestion();
+        System.out.printf(question);
+        staff.feedback(question);
+        leader.communicate();
     }
 }
