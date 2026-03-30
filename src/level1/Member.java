@@ -42,6 +42,6 @@ public abstract class Member {
     }
 
     // TODO: getRole(), doTask()를 추상 메서드로 선언하세요.
-    public abstract void getRole();
+    public abstract String getRole();
     public abstract void doTask();
 }

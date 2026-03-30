@@ -1,6 +1,6 @@
 package level2;
 
-public class Leader {
+public class Leader extends Member {
 
     public Leader(String name) {
         // TODO: 부모 클래스 Member의 생성자를 호출하세요.
