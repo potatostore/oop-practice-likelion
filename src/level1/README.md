@@ -78,6 +78,6 @@ member.assignmentSubmitted = true;
 2. **왜 `name`과 `assignmentSubmitted`를 `private`으로 두어야 하는가?**
     A : 캡슐화를 위해 name, assignmentSubmitted와 같은 필드변수는 private로 선언하고, getter/setter과 같은 접근 기능을 통해 부여.
 3. **`submitAssignment()` 없이 필드를 직접 수정하게 하면 어떤 문제가 생기는가?**
-    A : ㅁㄹ?
+    A : 이전 필드의 상태를 통해 과제를 제출했었는지 확인 불가. / 캡슐화가 깨짐
 4. **지금 단계에서 아직 자식 클래스를 만들지 않았는데도 `getRole()`과 `doTask()`를 미리 선언한 이유는 무엇인가?**
     A : 자식 클래스가 정의되어 있지 않아도, 자식 클래스에서 필수적으로 구현해야할 메서드를 추상 클래스에서 선언하고, 이를 자식 클래스에서 구현하는 것을 강제함
