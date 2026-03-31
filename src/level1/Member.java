@@ -5,7 +5,6 @@ public abstract class Member {
     private boolean assignmentSubmitted;
 
     public Member(String name) {
-        // TODO: name이 null이거나, 빈 문자열이거나, 공백만 있는 문자열이면 IllegalArgumentException 예외를 발생시키세요.
         String compName = name.replace(" ", "");
         if(compName == null || compName.isEmpty()){
             throw new IllegalArgumentException("이름은 비어 있을 수 없습니다.");
@@ -41,7 +40,6 @@ public abstract class Member {
         }
     }
 
-    // TODO: getRole(), doTask()를 추상 메서드로 선언하세요.
     public abstract String getRole();
     public abstract void doTask();
 }

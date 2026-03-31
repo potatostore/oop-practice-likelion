@@ -8,7 +8,6 @@ public class Main {
         Staff staff = new Staff("영희");
         Leader leader = new Leader("민석");
 
-        // TODO: README.md의 예시 실행 결과 형식 참고하여 출력 코드 작성해보기
         System.out.printf(babyLion.getRole());
         System.out.printf(staff.getRole());
         System.out.printf(leader.getRole());
